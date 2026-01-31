@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rod Bland — AI Automation & Ecommerce Ops</title>
-    <meta name="description" content="Rod Bland builds AI-powered automation for ecommerce operations. Running 3 businesses with AI agents, APIs, and relentless automation.">
+    <title>Rod Bland</title>
+    <meta name="description" content="Rod Bland — eCommerce ops meets AI automation. Sydney, Australia.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -17,7 +17,6 @@
             --text-muted: #888;
             --accent: #3b82f6;
             --accent-glow: rgba(59, 130, 246, 0.15);
-            --green: #22c55e;
             --mono: 'JetBrains Mono', monospace;
             --sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
         }
@@ -30,161 +29,61 @@
             color: var(--text);
             line-height: 1.6;
             -webkit-font-smoothing: antialiased;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 40px 24px;
         }
 
-        .container {
-            max-width: 720px;
-            margin: 0 auto;
-            padding: 0 24px;
+        .card {
+            max-width: 440px;
+            width: 100%;
         }
 
-        /* Header */
-        header {
-            padding: 60px 0 40px;
-            border-bottom: 1px solid var(--border);
-        }
-
-        .header-top {
+        .header {
             display: flex;
             align-items: center;
-            gap: 20px;
-            margin-bottom: 24px;
+            gap: 16px;
+            margin-bottom: 20px;
         }
 
         .avatar {
-            width: 72px;
-            height: 72px;
+            width: 60px;
+            height: 60px;
             border-radius: 50%;
             border: 2px solid var(--border);
             object-fit: cover;
         }
 
         .header-info h1 {
-            font-size: 1.75rem;
+            font-size: 1.4rem;
             font-weight: 700;
             letter-spacing: -0.02em;
         }
 
-        .header-info .tagline {
+        .header-info .subtitle {
             color: var(--text-muted);
-            font-size: 0.95rem;
-            margin-top: 2px;
-        }
-
-        .status-line {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            margin-top: 4px;
             font-size: 0.85rem;
-            color: var(--green);
-            font-family: var(--mono);
-        }
-
-        .status-dot {
-            width: 8px;
-            height: 8px;
-            background: var(--green);
-            border-radius: 50%;
-            animation: pulse 2s ease-in-out infinite;
-        }
-
-        @keyframes pulse {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.4; }
         }
 
         .bio {
-            font-size: 1.05rem;
             color: var(--text-muted);
-            line-height: 1.7;
+            font-size: 0.95rem;
+            line-height: 1.8;
+            margin-bottom: 24px;
         }
 
-        .bio strong {
-            color: var(--text);
+        .divider {
+            border: none;
+            border-top: 1px solid var(--border);
+            margin: 0 0 20px;
         }
 
-        /* Sections */
-        section {
-            padding: 40px 0;
-            border-bottom: 1px solid var(--border);
-        }
-
-        section:last-of-type {
-            border-bottom: none;
-        }
-
-        h2 {
-            font-size: 0.8rem;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-            color: var(--text-muted);
-            margin-bottom: 20px;
-            font-family: var(--mono);
-        }
-
-        /* What I Do */
-        .cards {
-            display: grid;
-            gap: 12px;
-        }
-
-        .card {
-            background: var(--surface);
-            border: 1px solid var(--border);
-            border-radius: 8px;
-            padding: 20px;
-            transition: border-color 0.2s;
-        }
-
-        .card:hover {
-            border-color: #333;
-        }
-
-        .card-title {
-            font-size: 1rem;
-            font-weight: 600;
-            margin-bottom: 6px;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-
-        .card-desc {
-            font-size: 0.9rem;
-            color: var(--text-muted);
-            line-height: 1.6;
-        }
-
-        /* Tools */
-        .tools-grid {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
-        }
-
-        .tool-tag {
-            font-family: var(--mono);
-            font-size: 0.8rem;
-            padding: 6px 12px;
-            background: var(--surface);
-            border: 1px solid var(--border);
-            border-radius: 6px;
-            color: var(--text-muted);
-            transition: all 0.2s;
-        }
-
-        .tool-tag:hover {
-            color: var(--text);
-            border-color: #333;
-        }
-
-        /* Links */
         .links {
             display: flex;
             flex-wrap: wrap;
-            gap: 12px;
+            gap: 10px;
         }
 
         .link-item {
@@ -193,8 +92,8 @@
             gap: 8px;
             text-decoration: none;
             color: var(--text);
-            font-size: 0.95rem;
-            padding: 10px 16px;
+            font-size: 0.9rem;
+            padding: 8px 14px;
             background: var(--surface);
             border: 1px solid var(--border);
             border-radius: 8px;
@@ -206,171 +105,44 @@
             background: var(--accent-glow);
         }
 
-        .link-icon {
-            font-size: 1.1rem;
-        }
-
-        /* Terminal block */
-        .terminal {
-            background: var(--surface);
-            border: 1px solid var(--border);
-            border-radius: 8px;
-            padding: 20px;
-            font-family: var(--mono);
-            font-size: 0.85rem;
-            line-height: 1.8;
-            overflow-x: auto;
-        }
-
-        .terminal .prompt {
-            color: var(--green);
-        }
-
-        .terminal .comment {
-            color: #555;
-        }
-
-        .terminal .output {
-            color: var(--text-muted);
-        }
-
-        /* Footer */
-        footer {
-            padding: 40px 0;
-            text-align: center;
-            color: var(--text-muted);
-            font-size: 0.85rem;
-        }
-
-        footer a {
-            color: var(--text-muted);
-            text-decoration: none;
-        }
-
-        footer a:hover {
-            color: var(--text);
-        }
-
-        /* Responsive */
         @media (max-width: 480px) {
-            header { padding: 40px 0 30px; }
-            .header-info h1 { font-size: 1.4rem; }
-            .avatar { width: 56px; height: 56px; }
-            section { padding: 30px 0; }
+            .header-info h1 { font-size: 1.2rem; }
+            .avatar { width: 48px; height: 48px; }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <div class="header-top">
-                <img src="avatar.jpg" alt="Rod Bland" class="avatar" onerror="this.style.display='none'">
-                <div class="header-info">
-                    <h1>Rod Bland</h1>
-                    <div class="tagline">AI Automation & Ecommerce Ops · Sydney 🇦🇺</div>
-                    <div class="status-line">
-                        <span class="status-dot"></span>
-                        <span>AI agent running 24/7</span>
-                    </div>
-                </div>
+    <div class="card">
+        <div class="header">
+            <img src="avatar.jpg" alt="Rod Bland" class="avatar" onerror="this.style.display='none'">
+            <div class="header-info">
+                <h1>Rod Bland</h1>
+                <div class="subtitle">Sydney, Australia 🇦🇺</div>
             </div>
-            <p class="bio">
-                I run <strong>3 businesses</strong> with heavy AI automation. Big fan of 
-                <strong>Claude Code</strong>, <strong>OpenClaw</strong>, and anything with an API. 
-                If it can be automated, I've probably already automated it — or I'm working on it right now.
-            </p>
-        </header>
+        </div>
 
-        <section>
-            <h2>// what I do</h2>
-            <div class="cards">
-                <div class="card">
-                    <div class="card-title">🤖 AI-Powered Operations</div>
-                    <div class="card-desc">
-                        Running an AI agent (Kit) on OpenClaw 24/7 — handles emails, calendar, browser automation, 
-                        brand protection, and daily ops across all three businesses.
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-title">📦 Ecommerce Automation</div>
-                    <div class="card-desc">
-                        Shopify, Amazon, international logistics across 4 countries. 
-                        Custom API integrations, inventory management, and order processing — all automated.
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-title">🛡️ Brand Protection</div>
-                    <div class="card-desc">
-                        Built tools to detect counterfeit websites and fraudulent sellers. 
-                        Automated DMCA takedowns, trademark enforcement, and marketplace monitoring.
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-title">⚡ API Everything</div>
-                    <div class="card-desc">
-                        If it has an API, I want to connect it. Gmail, Shopify, Manager.io, 
-                        Google Calendar, Twitter — everything talks to everything.
-                    </div>
-                </div>
-            </div>
-        </section>
+        <p class="bio">
+            Big fan of Claude Code, OpenClaw, and anything with an API.<br>
+            Automating everything I can get my hands on.<br>
+            eCommerce ops meets AI automation.
+        </p>
 
-        <section>
-            <h2>// tools & stack</h2>
-            <div class="tools-grid">
-                <span class="tool-tag">Claude Code</span>
-                <span class="tool-tag">OpenClaw</span>
-                <span class="tool-tag">Shopify API</span>
-                <span class="tool-tag">Amazon SP-API</span>
-                <span class="tool-tag">Python</span>
-                <span class="tool-tag">Node.js</span>
-                <span class="tool-tag">Gmail API</span>
-                <span class="tool-tag">Playwright</span>
-                <span class="tool-tag">Tailscale</span>
-                <span class="tool-tag">Cloudflare</span>
-                <span class="tool-tag">Manager.io</span>
-                <span class="tool-tag">Brave Search</span>
-            </div>
-        </section>
+        <hr class="divider">
 
-        <section>
-            <h2>// background</h2>
-            <div class="terminal">
-                <span class="comment">// 10+ years in ecommerce</span><br>
-                <span class="prompt">→</span> Shopify Plus, Amazon, Klaviyo, international logistics<br>
-                <span class="prompt">→</span> Multi-7-figure business built and exited<br>
-                <span class="prompt">→</span> Multiple BRW Fast 100 list appearances<br>
-                <span class="comment">// now</span><br>
-                <span class="prompt">→</span> Running 3 businesses with AI automation<br>
-                <span class="prompt">→</span> Building in public, sharing what works<br>
-            </div>
-        </section>
-
-        <section>
-            <h2>// connect</h2>
-            <div class="links">
-                <a href="https://x.com/rodbland" target="_blank" rel="noopener" class="link-item">
-                    <span class="link-icon">𝕏</span>
-                    <span>@rodbland</span>
-                </a>
-                <a href="https://www.youtube.com/@UntetheredConsciousness" target="_blank" rel="noopener" class="link-item">
-                    <span class="link-icon">▶</span>
-                    <span>YouTube</span>
-                </a>
-                <a href="https://github.com/rodbland" target="_blank" rel="noopener" class="link-item">
-                    <span class="link-icon">⌥</span>
-                    <span>GitHub</span>
-                </a>
-                <a href="mailto:rod@rodbland.com" class="link-item">
-                    <span class="link-icon">✉</span>
-                    <span>Email</span>
-                </a>
-            </div>
-        </section>
-
-        <footer>
-            <p>Built with AI, obviously. &copy; 2026</p>
-        </footer>
+        <div class="links">
+            <a href="https://x.com/rodbland" target="_blank" rel="noopener" class="link-item">
+                <span>𝕏</span> @rodbland
+            </a>
+            <a href="https://www.youtube.com/@UntetheredConsciousness" target="_blank" rel="noopener" class="link-item">
+                <span>▶</span> YouTube
+            </a>
+            <a href="https://github.com/rodbland2021" target="_blank" rel="noopener" class="link-item">
+                <span>⌥</span> GitHub
+            </a>
+            <a href="mailto:rod@rodbland.com" class="link-item">
+                <span>✉</span> Email
+            </a>
+        </div>
     </div>
 </body>
 </html>
